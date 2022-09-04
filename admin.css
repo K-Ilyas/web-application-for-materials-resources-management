@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "AFFORD";
+    src: url("font/THE-AFFORD.otf"), url("font/THE-AFFORD-ALT.otf"), url("font/THE-AFFORD-Shadow.otf");
+}
+
+.center {
+    padding-top: 90px;
+}
+
+.navbar-fixed-bottom {
+    text-align: center;
+}
+
+.panel-title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+abbr {
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+#icon {
+    text-align: center;
+}
+
+.end {
+    text-decoration: none;
+    font-family: "AFFORD", sans-serif;
+    color: #3498db;
+}
+
+.alert-danger {
+    height: 100px;
+    width: 300px;
+}
+
+#error {
+    text-align: center;
+    color: red;
+    font-style: italic;
+    font-size: 0.7em;
+    margin-top: 4px;
+    display: none;
+}
+
+#logo_dgi {
+    display: inline;
+}
+
+.img_display {
+    text-align: center;
+}
+
+.op {
+    background-color: transparent;
+}
+
+#img_admin {
+    padding-top: 150px;
+    background: url("./../image_page/directionGN.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+@font-face {
+    font-family: "KrazyHazy";
+    src: url("font/OpenSans-Regular.ttf");
+}
+
+body {
+    font-family: "KrazyHazy";
+    background-color: #f8f8ff;
+}
+
+#envoyer,
+#envoyer:hover,
+#envoyer:active,
+#envoyer:visited {
+    background-color: transparent !important;
+    color: #3498db !important;
+}

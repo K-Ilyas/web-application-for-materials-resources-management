@@ -7,3 +7,5 @@ web admin application for materials resources management (toner, pc ,printer) us
 3- change the file change.php and set the email credentials to your own credentials.<br>
 4- move the projet directory to the htdocs directory in Xampp or wampp.<br>
 ## Demo
+https://user-images.githubusercontent.com/61426347/188473215-f206e122-2a66-4dad-aad6-01d7adaac5f3.mp4
+

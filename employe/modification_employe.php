@@ -2,7 +2,6 @@
 ob_start();
 session_start();
 require __DIR__ . './../db.php';
-
 function date_ans($date1, $date2)
 {
   $diff = abs($date1 - $date2);
@@ -66,22 +65,13 @@ if (isset($_GET['numero'])) {
         $infosfichier = pathinfo($_FILES['image']['name']);
         $extension_upload = $infosfichier['extension'];
         $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
+        $time = time();
         if (in_array($extension_upload, $extensions_autorisees)) {
-
-          $reponse = $bdd->query('SELECT MAX(id) as max_id FROM Employé');
-          $donne = $reponse->fetch();
-          $valeur = $donne['max_id'] + 1;
-          $reponse->closeCursor();
-
-          move_uploaded_file($_FILES['image']['tmp_name'], 'Images/' . $valeur . '.' . $extension_upload . '');
+          move_uploaded_file($_FILES['image']['tmp_name'], '../Images/' . $time . '.' . $extension_upload . '');
         }
       }
 
-
-
-
-
-      $_POST['image'] = strip_tags('Images/' . $valeur . '.' . $extension_upload);
+      $_POST['image'] = strip_tags('Images/' .  $time  . '.' . $extension_upload);
       $_POST['nom'] = '' . strip_tags(strtoupper($_POST['nom'])) . '';
       $reponse = $bdd->query('SELECT MAX(id) as id FROM Employé');
       if ($donne = $reponse->fetch()) {
@@ -131,9 +121,8 @@ if (isset($_GET['numero'])) {
         $contenu .= "<p><strong style='background-color:red;'>LOGIN:</strong>" . $_ppr . "</p>";
         $contenu .= "<p><strong style='background-color:red;'>password:</strong>" . $password . "</p>";
         $contenu .= "</body><html>";
-
         $headers = 'MIME-Version: 1.0' . "\r\n";
-        $headers = 'From: ilyaskritet@gmail.com' . "\r\n";
+        $headers = 'From: @gmail.com' . "\r\n";
         $headers .= 'Content-type: text/html; charset=utf8' . "\r\n";/**/
         $resultat = mail($destination, $sujet, $contenu, $headers);
       }
@@ -152,14 +141,11 @@ if (isset($_GET['numero'])) {
           $infosfichier = pathinfo($_FILES['image']['name']);
           $extension_upload = $infosfichier['extension'];
           $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
+          $time = time();
           if (in_array($extension_upload, $extensions_autorisees)) {
-            $reponse = $bdd->query('SELECT MAX(id) AS id FROM Employé');
-            $donnes = $reponse->fetch();
-            $valeur = $donnes['id'] + 1;
-            $reponse->closeCursor();
-            move_uploaded_file($_FILES['image']['tmp_name'], '../Images/' . $valeur . '.' . $extension_upload . '');
+            move_uploaded_file($_FILES['image']['tmp_name'], '../Images/' .  $time . '.' . $extension_upload . '');
             $reponse = $bdd->prepare('UPDATE Employé SET chemin_image=? WHERE id=?');
-            $reponse->execute(array(strip_tags('Images/' . $valeur . '.' . $extension_upload), $_POST['id']));
+            $reponse->execute(array(strip_tags('Images/' .  $time . '.' . $extension_upload), $_POST['id']));
             $reponse->closeCursor();
           }
         }

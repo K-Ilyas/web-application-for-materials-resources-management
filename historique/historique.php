@@ -95,11 +95,8 @@ $reponse2 = $bdd->query('SELECT * FROM employé_histo');
         <div class="table-responsive">
           <table class="table display" id="employe_tr">
             <?php
-            try {
-              $bdd = new PDO('mysql:host=localhost;dbname=BASE;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-            } catch (Exception $e) {
-              die('Erreur:' . $e->getMessage());
-            }
+            require __DIR__ . './../db.php';
+
             $reponse2 = $bdd->query('SELECT * FROM Employé_histo');
             ?>
             <thead>

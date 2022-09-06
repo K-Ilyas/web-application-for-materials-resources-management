@@ -96,7 +96,10 @@ $reponse2 = $bdd->query('SELECT * FROM employé_histo');
           <table class="table display" id="employe_tr">
             <?php
             require __DIR__ . './../db.php';
+<<<<<<< HEAD
 
+=======
+>>>>>>> f1be0091c0d5c24ae42654e35610387da25c6895
             $reponse2 = $bdd->query('SELECT * FROM Employé_histo');
             ?>
             <thead>

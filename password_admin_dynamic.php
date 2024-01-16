@@ -1,6 +1,6 @@
 <?php header("Content-type: text/javascript");
 session_start();
-require __DIR__ . './db.php';
+require __DIR__ . '/db.php';
 
 if (isset($_GET['password'])) {
   if (isset($_SESSION['ppr_admin'])) {

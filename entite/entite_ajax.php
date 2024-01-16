@@ -4,7 +4,7 @@
 
 
 <?php
-require __DIR__ . './../db.php';
+require __DIR__ . '/../db.php';
 
 $res = 0;
 $reponse2 = $bdd->query('SELECT * FROM Entité');

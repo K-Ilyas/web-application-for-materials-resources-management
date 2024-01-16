@@ -1,6 +1,6 @@
 <?php
 session_start();
-require __DIR__ . './../db.php';
+require __DIR__ . '/../db.php';
 
 if (isset($_POST['id'])) {
   $reponse = $bdd->prepare('SELECT * FROM Entité WHERE id=?');

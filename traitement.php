@@ -1,6 +1,6 @@
 <?php session_start();
 header('type-content:text/html');
-require __DIR__ . './db.php';
+require __DIR__ . '/db.php';
 
 if (isset($_POST['ppr']) and isset($_POST['pwd'])) {
 	if (isset($_POST['retenir'])) {

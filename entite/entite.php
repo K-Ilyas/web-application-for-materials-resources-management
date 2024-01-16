@@ -18,7 +18,7 @@
       <div class="table-responsive" id="table_en">
         <table class="table  table-striped table-condensed  table-dark" id="table">
           <?php
-          require __DIR__ . './../db.php';
+          require __DIR__ . '/../db.php';
           $reponse2 = $bdd->query('SELECT * FROM Entité');
           ?>
           <thead>

@@ -1,5 +1,5 @@
 <?php header("Content-type: text/javascript");
-require __DIR__ . './../db.php';
+require __DIR__ . '/../db.php';
 
 if (isset($_GET['numero'])) {
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require __DIR__ . './db.php';
+require __DIR__ . '/db.php';
 
 if (isset($_SESSION['ppr_admin'])) {
   $reponse = $bdd->prepare('SELECT password FROM Employé WHERE ppr=?');

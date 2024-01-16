@@ -32,7 +32,7 @@
       <div class="table-responsive" id="tabler_mat">
         <table class="table  table-striped table-condensed" id="table_mat">
           <?php
-          require __DIR__ . './../db.php';
+          require __DIR__ . '/../db.php';
 
           $reponse2 = $bdd->query('SELECT ppr,M.id as id ,M.N_Série as N_Série,M.marque ,M.type as type,
             M.etat,date_activation FROM Employé INNER JOIN Employé_Matériel ON 

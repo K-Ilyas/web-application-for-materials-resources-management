@@ -10,6 +10,7 @@ $(function () {
           $('#myForm').submit();
         }
         else {
+          alert(data)
           $('#error:hidden').show();
           $('#ppr').val('');
           $('#pwd').val('');

@@ -8,7 +8,7 @@ use PHPMailer\PHPMailer\SMTP;
 require './PHPMailer/src/Exception.php';
 require './PHPMailer/src/PHPMailer.php';
 require './PHPMailer/src/SMTP.php';
-require __DIR__ . './db.php';
+require __DIR__ . '/db.php';
 function code($numbre, $chaine = '0123456789')
 {
   $nbombre_numero = strlen($chaine) - 1;

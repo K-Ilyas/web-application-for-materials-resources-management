@@ -1,5 +1,5 @@
 <?php header("Content-type: text/javascript");
-require __DIR__ . './../db.php';
+require __DIR__ . '/../db.php';
 ?>
 var variable=document.getElementById('marche_n');
 var bool=0;

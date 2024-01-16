@@ -3,7 +3,7 @@ ob_start();
 session_start(); ?>
 
 <?php
-require __DIR__ . './../db.php';
+require __DIR__ . '/../db.php';
 
 if (isset($_SESSION['ppr_employe'])) {
 ?>

@@ -18,7 +18,7 @@
       <div class="table-responsive" id="table_rto">
         <table class="display" id="table_to">
           <?php
-          require __DIR__ . './../db.php';
+          require __DIR__ . '/../db.php';
 
           $reponse2 = $bdd->query('SELECT  * FROM Consommable ');
           ?>

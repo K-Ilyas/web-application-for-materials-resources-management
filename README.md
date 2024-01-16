@@ -1,5 +1,8 @@
 # web-application-for-materials-resources-management.
 web admin application for materials resources management (toner, pc ,printer) using PHP &amp;&amp; MYSQL.
+Admin credentials : 
+- Pseudo : DGIA2019101
+- Password : 0000
 ### steps :
 1- import the base_database.sql file to phpMyAdmin .<br>
 2- change the email of the first record in the table employé to your own email.<br>

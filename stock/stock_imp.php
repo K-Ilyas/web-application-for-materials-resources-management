@@ -30,7 +30,7 @@
       <div class="table-responsive" id="tabler_mat">
         <table class="display" id="table_imp">
           <?php
-          require __DIR__ . './../db.php';
+          require __DIR__ . '/../db.php';
           $reponse2 = $bdd->query('SELECT * FROM Matériels INNER JOIN arrivage_marché ON Matériels.id_arrivage=arrivage_marché.id WHERE etat=\'EN STOCK\' AND Matériels.type=\'IMP\'');;
           ?>
           <thead>

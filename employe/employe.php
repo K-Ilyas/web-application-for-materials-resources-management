@@ -16,7 +16,7 @@
       <div class="table-responsive" id="table_re">
         <table class="table  table-striped table-condensed" id="table_em">
           <?php
-          require __DIR__ . './../db.php';
+          require __DIR__ . '/../db.php';
           $reponse2 = $bdd->query('SELECT * FROM Employé WHERE etat=\'simple\'');
           ?>
           <thead>

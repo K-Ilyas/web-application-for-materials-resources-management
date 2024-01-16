@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require __DIR__ . './../db.php';
+require __DIR__ . '/../db.php';
 
 if (isset($_POST['marche'])) {
   $reponse = $bdd->prepare('SELECT * FROM Marché WHERE numéro_marché=?');

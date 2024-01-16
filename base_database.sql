@@ -17,7 +17,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Base de données :  `base`
 --
@@ -424,7 +423,7 @@ CREATE TABLE `employé` (
 --
 
 INSERT INTO `employé` (`id`, `chemin_image`, `ppr`, `nom`, `prénom`, `sexe`, `email`, `téléphone`, `ville`, `date_inscription`, `password`, `id_entite`, `etat`) VALUES
-(69, 'Images/1662328718.png', 'DGIA2019101', 'ADMIN', 'ADMIN', 'F', 'contact@gmail.com', '+212 670143181', 2, '2019-10-18 17:38:38', '$2y$10$xphfK9V4hfu7VytIGJayxevMkS316KQbh5IwgmrOmMLiXKFWGJQQq', 1, 'admin'),
+(69, 'Images/1662328718.png', 'DGIA2019101', 'ADMIN', 'ADMIN', 'F', 'contact@gmail.com', '+212 670143181', 2, '2019-10-18 17:38:38', '$2y$10$.xaTtNUsSaL8B4EbD/9KjuW8pDT3SaRRvFNkKkWlXsxGfqsKiCEoy', 1, 'admin'),
 (90, 'Images/116.png', 'DGIA20191090', 'ABD SLAM', 'KJKJ', 'H', 'ilyas@gmail.com', '+212 765453423', 1, '2019-10-27 15:48:54', '$2y$10$ovkCYRM.g9Va8RovgQO/IOTVeLxiyAeasfzOPElyVyT5TLEExPhDa', 1, 'simple'),
 (105, 'Images/117.png', 'DGIA201910105', 'ADKHKD', 'ADKJKD', 'H', 'contact2@gmail.com', '+212 666019059', 1, '2019-10-27 19:33:43', '$2y$10$ovkCYRM.g9Va8RovgQO/IOTVeLxiyAeasfzOPElyVyT5TLEExPhDa', 1, 'simple'),
 (115, 'Images/106.jpg', 'DGIA201910106', 'SDFH', 'SDKJK', 'H', 'skdjkd@gmail.chdg', '+212 6545773', 1, '2019-10-27 21:44:27', '$2y$10$3vqFBl0KIh0Y0IK3sMb4u.McUbujKd4PV0MBCrC0uux8dKCBBC4N.', 1, 'simple');

@@ -3,7 +3,7 @@ if (isset($_POST['id'])) {
 
   header('Content-Type: text/pdf; charset=utf-8');
   $_POST['id'] = htmlspecialchars($_POST['id']);
-  require __DIR__ . './../db.php';
+  require __DIR__ . '/../db.php';
 
   $array = array();
   $reponse = $bdd->prepare("SELECT * FROM BL_Consommable WHERE id=?");

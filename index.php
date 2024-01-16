@@ -1,7 +1,7 @@
 <?php
 session_start();
 header('type-content:text/html');
-require __DIR__ . './db.php';
+require __DIR__ . '/db.php';
 
 if (isset($_SESSION['ppr_admin'])) {
 

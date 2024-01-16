@@ -18,7 +18,7 @@
       <div class="table-responsive" id="table_rmc">
         <table class="table  table-striped table-condensed  table-dark" id="table_mc">
           <?php
-          require __DIR__ . './../db.php';
+          require __DIR__ . '/../db.php';
 
           $reponse2 = $bdd->query('SELECT  * FROM Marché ');
           ?>

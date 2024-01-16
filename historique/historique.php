@@ -68,7 +68,7 @@
 
 
 <?php
-require __DIR__ . './../db.php';
+require __DIR__ . '/../db.php';
 
 $reponse2 = $bdd->query('SELECT * FROM employé_histo');
 ?>
@@ -95,11 +95,7 @@ $reponse2 = $bdd->query('SELECT * FROM employé_histo');
         <div class="table-responsive">
           <table class="table display" id="employe_tr">
             <?php
-            require __DIR__ . './../db.php';
-<<<<<<< HEAD
-
-=======
->>>>>>> f1be0091c0d5c24ae42654e35610387da25c6895
+            require __DIR__ . '/../db.php';
             $reponse2 = $bdd->query('SELECT * FROM Employé_histo');
             ?>
             <thead>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require __DIR__ . './../db.php';
+require __DIR__ . '/../db.php';
 
 if (isset($_POST['ppr']) and isset($_POST['serie'])) {
   $_SESSION['ppr'] = $_POST['ppr'];

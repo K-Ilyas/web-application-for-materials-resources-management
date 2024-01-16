@@ -17,7 +17,7 @@
       <div class="table-responsive" id="table_rar">
         <table class="table  table-striped table-condensed  table-dark" id="table_ar">
           <?php
-          require __DIR__ . './../db.php';
+          require __DIR__ . '/../db.php';
 
           $reponse2 = $bdd->query('SELECT  * FROM Arrivage_Marché INNER JOIN Marché WHERE Marché.numéro_marché=Arrivage_Marché.AM_marché ');
           ?>
